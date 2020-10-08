@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Home from "./components/Home";
+import Header from "./components/Header";
+import About from "./components/About";
+import Eligibility from "./components/Eligibility";
+
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link,
+	useRouteMatch,
+	useParams,
+} from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Router>
+			<div className="App">
+				<Switch>
+					<Route path="/about">
+						<About />
+					</Route>
+
+					<Route path="/free-assessment-form">
+						<Header />
+						<Eligibility />
+					</Route>
+
+					<Route path="/">
+						<Home />
+					</Route>
+				</Switch>
+			</div>
+		</Router>
+	);
 }
 
 export default App;

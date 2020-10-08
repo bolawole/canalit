@@ -1,0 +1,29 @@
+.banner {
+	background: red;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+.banner_logo {
+	margin-left: 40px;
+}
+.banner_icon {
+	margin-right: 10px;
+}
+
+.banner_info > ul {
+	display: flex;
+	margin-right: 30px;
+}
+li {
+	list-style: none;
+}
+.banner_info > ul > li {
+	margin-left: 40px;
+}
+@media screen and (max-width: 800px) {
+	.banner {
+		display: none;
+	}
+}

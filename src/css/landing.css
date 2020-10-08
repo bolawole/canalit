@@ -1,0 +1,77 @@
+.landing__ {
+	color: white;
+	position: relative;
+	height: 60vh;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.landing {
+	height: 60vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 -20px;
+	position: relative;
+	color: white;
+
+	top: 150px;
+	left: 0;
+	width: 100vw;
+	/* height: 100vh; */
+	background-size: cover;
+	background-position: center;
+	will-change: opacity;
+}
+.landing_overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 60vh;
+	width: 100%;
+	background: black;
+	opacity: 0.4;
+}
+.landing_book {
+	font-family: "Montserrat", sans-serif;
+	z-index: 1;
+	position: absolute;
+	top: 25%;
+	left: 47px;
+	font-size: 3rem;
+}
+.landing_book > #landing_start {
+	margin-top: 10px;
+	font-weight: bold;
+}
+.landing_book > button {
+	padding: 0.5rem;
+	margin-left: 20px;
+	border-radius: 10px;
+	outline: none;
+	background: none;
+	border: 1px solid;
+	color: white;
+	font-size: 15px;
+	transition: all ease-in-out 0.3s;
+}
+.landing_book > button > * {
+	color: white;
+}
+.landing_book > button:hover {
+	background: red;
+	border: none;
+	box-shadow: 0 0 10px #826767;
+	font-weight: 800;
+}
+@media screen and (max-width: 800px) {
+	.landing_overlay {
+		top: 0;
+	}
+	.landing {
+		top: 0;
+	}
+	.landing_book {
+		top: 25%;
+		left: 47px;
+		font-size: 1rem;
+	}
+}
