@@ -13,6 +13,8 @@ import {
 	useRouteMatch,
 	useParams,
 } from "react-router-dom";
+import ReadMore from "./components/ReadMore";
+import News from "./components/News";
 
 function App() {
 	return (
@@ -22,12 +24,14 @@ function App() {
 					<Route path="/about">
 						<About />
 					</Route>
-
-					<Route path="/free-assessment-form">
-						<Header />
-						<Eligibility />
+					<Route path="/studyinCanada">
+						<ReadMore />
 					</Route>
-
+					<Route path="/visitCanada">Immigration Page</Route>
+					<Route path="/canadacitizenship">canadacitizenship</Route>
+					<Route path="/immigrationnews">
+						<News />
+					</Route>
 					<Route path="/">
 						<Home />
 					</Route>

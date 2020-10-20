@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 function About({ className }) {
 	return (
-		<div className={className}>
+		<div className={className} id="about">
 			<p>
 				Canalit Consulting Services is a Canadian based one-stop-shop for all
 				Canada immigration matters. Our goal is simple;{" "}

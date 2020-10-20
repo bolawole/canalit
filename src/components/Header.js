@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-// import {Link} from 'react-scroll'
+import { Link as Linkrouter } from "react-router-dom";
+import { Link } from "react-scroll";
 import "../css/header.css";
 import logo from "../Assets/Logo.png";
 
@@ -25,12 +25,35 @@ function Header() {
 				</div>
 				<ul>
 					<li>
-						<Link to="/about"> Who we are</Link>
+						<Link
+							activeClass="active"
+							to="about"
+							spy={true}
+							smooth={true}
+							duration={1000}
+						>
+							{" "}
+							Who we are
+						</Link>
 					</li>
-					<li>Visa Catergories</li>
-					<li>Contact</li>
-					<li>Latest News</li>
-					<li>Our Services</li>
+					{/* <li>Visa Catergories</li>
+					<li>Contact</li> */}
+					<li>
+						<Linkrouter to="/immigrationnews">Latest News</Linkrouter>{" "}
+					</li>
+					<li>
+						<Link
+							activeClass="active"
+							to="about"
+							offset={-50}
+							spy={true}
+							smooth={true}
+							duration={1000}
+						>
+							{" "}
+							Our Services
+						</Link>
+					</li>
 				</ul>
 			</nav>
 			<div
@@ -40,12 +63,36 @@ function Header() {
 			>
 				<ul>
 					<li>
-						<Link to="/about"> Who we are</Link>
+						<Link
+							activeClass="active"
+							to="services"
+							spy={true}
+							offset={-550}
+							smooth={true}
+							duration={1000}
+						>
+							{" "}
+							Who we are
+						</Link>
 					</li>
-					<li>Visa Catergories</li>
-					<li>Contact</li>
-					<li>Latest News</li>
-					<li>Our Services</li>
+					{/* <li>Visa Catergories</li>
+					<li>Contact</li> */}
+					<li>
+						<Linkrouter to="/immigrationnews">Latest News</Linkrouter>
+					</li>
+					<li>
+						<Link
+							activeClass="active"
+							to="services"
+							spy={true}
+							smooth={true}
+							offset={-150}
+							duration={1000}
+						>
+							{" "}
+							Our Services
+						</Link>
+					</li>
 				</ul>
 			</div>
 		</div>
