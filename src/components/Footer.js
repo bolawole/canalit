@@ -38,7 +38,7 @@ function Footer() {
 					</ul>
 				</div>
 				<div className="col-lg-4">
-					<h6>Newsletter</h6>
+					{/* <h6>Newsletter</h6>
 					<p>You can trust us. we only send offers, not a single spam.</p>
 
 					<form className="footer_form" action="">
@@ -50,7 +50,7 @@ function Footer() {
 						<button type="submit">
 							<i className="fas fa-arrow-circle-right"></i>
 						</button>
-					</form>
+					</form> */}
 				</div>
 			</div>
 			<div className="footer_right">

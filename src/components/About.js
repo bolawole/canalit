@@ -17,10 +17,23 @@ function About({ className }) {
 }
 
 export default styled(About)`
-	width: 700px;
-	margin: 3rem auto;
+	width: 100%;
+	margin: 5rem auto;
 	background-color: white;
-	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
-	border-radius: 10px;
+	/* box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75); */
+	/* border-radius: 10px; */
 	padding: 2rem;
+	background-color: #80808012;
+	p {
+		width: 50%;
+		margin: 3rem auto;
+		font-family: "open sans" sans-serif;
+		text-align: justify;
+		font-weight: 600;
+	}
+	@media screen and (max-width: 800px) {
+		p {
+			width: 100%;
+		}
+	}
 `;

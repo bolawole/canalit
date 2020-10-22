@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Collapse from "react-bootstrap/Collapse";
-
+import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 const Work = ({ className }) => {
 	const [isOpen1, setisOpen1] = useState(false);
 	const [isOpen2, setisOpen2] = useState(false);
@@ -59,14 +60,15 @@ const Work = ({ className }) => {
 					and all these factors will count in your favour when applying for
 					permanent residency in Canada.
 				</p>
-				<h5>FAQ</h5>
+				<h5 id="faq">FAQ</h5>
 				<div
 					onClick={() => {
 						setisOpen1((prev) => !prev);
 					}}
 					className="work_question"
 				>
-					<h5>I am Looking for working In Canada {isOpen1 ? "-" : "+"}</h5>
+					<h5>I am Looking for working In Canada </h5>
+					{isOpen1 ? <KeyboardArrowDownIcon /> : <KeyboardArrowUpIcon />}
 				</div>
 				<Collapse in={isOpen1}>
 					<div id="example-collapse-text">
@@ -83,7 +85,8 @@ const Work = ({ className }) => {
 					}}
 					className="work_question"
 				>
-					<h5>I already Have a Job Offer {isOpen2 ? "-" : "+"}</h5>
+					<h5>I already Have a Job Offer </h5>
+					{isOpen2 ? <KeyboardArrowDownIcon /> : <KeyboardArrowUpIcon />}
 				</div>
 				<Collapse in={isOpen2}>
 					<div id="example-collapse-text">
@@ -101,10 +104,8 @@ const Work = ({ className }) => {
 					}}
 					className="work_question"
 				>
-					<h5>
-						I am a Graduate and i will Like to Work after my Studies{" "}
-						{isOpen3 ? "-" : "+"}
-					</h5>
+					<h5>I am a Graduate and i will Like to Work after my Studies </h5>
+					{isOpen3 ? <KeyboardArrowDownIcon /> : <KeyboardArrowUpIcon />}
 				</div>
 				<Collapse in={isOpen3}>
 					<div id="example-collapse-text">
@@ -156,6 +157,7 @@ const Work = ({ className }) => {
 export default styled(Work)`
 	h5 {
 		text-align: center;
+		font-size: 16px;
 	}
 	.work_header {
 		height: 300px;
@@ -169,6 +171,12 @@ export default styled(Work)`
 		height: 300px;
 		fill: white;
 		margin-right: 3rem;
+	}
+	.MuiSvgIcon-root {
+		position: absolute;
+		height: 50px;
+		top: 5px;
+		right: -57%;
 	}
 	.work_content {
 		flex: 0.3;
@@ -197,6 +205,7 @@ export default styled(Work)`
 		box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
 		color: white;
 		border-radius: 5px;
+		position: relative;
 	}
 	.collapse {
 		background: #80808012;
@@ -206,21 +215,33 @@ export default styled(Work)`
 	li {
 		list-style: circle;
 	}
+	#faq {
+		color: #e8a87c;
+	}
 	@media screen and (max-width: 800px) {
 		h2 {
 			text-align: center;
 		}
+
 		.work_description {
 			width: 100%;
 			padding: 3rem 0.5rem;
 			text-align: justify;
 		}
-	}
-	.work_header {
-		display: block;
-		padding: 1rem;
-		height: max-content;
-	}
-	.work-content {
+		.work_content {
+			text-align: center;
+		}
+		.work_header {
+			display: block;
+			padding: 1rem;
+			height: max-content;
+		}
+		svg {
+			width: 100%;
+		}
+		button {
+			width: 100%;
+			margin-left: 0rem;
+		}
 	}
 `;

@@ -2,24 +2,22 @@ import React from "react";
 import "../css/service.css";
 import { Link } from "react-router-dom";
 
-function Service(props) {
+function Service({ data }) {
+	const { title, source, content } = data;
 	return (
 		<div className="service">
-			<img className="service_img" src={props.source} alt="study visa" />
+			<img className="service_img" src={source} alt="study visa" />
 			<div className="service_info">
-				<h4>{props.title}</h4>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ipsum
-					labore cum distinctio et placeat quisquam saepe ea sequi veritatis.
-				</p>
+				<h4>{title}</h4>
+				<p>{content}</p>
 				<button>
 					<Link
 						to={
-							props.title === "TEMPORARY"
+							title === "TEMPORARY"
 								? "/studyinCanada"
-								: props.title === "IMMIGRATE"
+								: title === "IMMIGRATE"
 								? "/visitCanada"
-								: props.title === "CITIZENSHIP"
+								: title === "CITIZENSHIP"
 								? "/canadacitizenship"
 								: "/studyinCanada"
 						}

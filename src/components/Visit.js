@@ -57,7 +57,7 @@ function Visit({ className }) {
 					<h5>What is Vistor Visa {isOpen1 ? "-" : "+"}</h5>
 				</div>
 				<Collapse in={isOpen1}>
-					<div id="example-collapse-text">
+					<div id="example-collapse-text" className="visit_collapse">
 						A Temporary Resident Visa (TRV), also referred to as a visitor visa
 						or Canada Tourist visa, is an official document issued by a Canadian
 						visa office that is placed in your passport to show that you have
@@ -74,7 +74,7 @@ function Visit({ className }) {
 					<h5>Basic Requirements {isOpen2 ? "-" : "+"}</h5>
 				</div>
 				<Collapse in={isOpen2}>
-					<div id="example-collapse-text">
+					<div id="example-collapse-text " className="visit_collapse">
 						<p>
 							There are a number for basic requirements for a Canadian visitor
 							visa. This requirements include:
@@ -95,7 +95,7 @@ function Visit({ className }) {
 						</ul>
 					</div>
 				</Collapse>
-				<div
+				{/* <div
 					onClick={() => {
 						setisOpen3((prev) => !prev);
 					}}
@@ -105,9 +105,13 @@ function Visit({ className }) {
 						I am a Graduate and i will Like to Work after my Studies{" "}
 						{isOpen3 ? "-" : "+"}
 					</h5>
-				</div>
-				<Collapse in={isOpen3}>
-					<div id="example-collapse-text">
+				</div> */}
+				<h6>
+					Have any Question? Our contact details can be found in the Footer
+					section
+				</h6>
+				{/* <Collapse in={isOpen3}>
+					<div id="example-collapse-text " className="visit_collapse">
 						After graduating from a designated Canadian educational institution,
 						international graduates may work in Canada for up to three years.
 						<h6>ELIGIBILITY REQUIREMENTS</h6>
@@ -147,7 +151,7 @@ function Visit({ className }) {
 							</li>
 						</ul>
 					</div>
-				</Collapse>
+				</Collapse> */}
 			</div>
 		</div>
 	);
@@ -168,6 +172,11 @@ export default styled(Visit)`
 		height: 300px;
 		fill: white;
 		margin-right: 3rem;
+	}
+	.visit_collapse {
+		background: #0000000f;
+		padding: 2rem;
+		margin-bottom: 1rem;
 	}
 	.visit_content {
 		flex: 0.3;

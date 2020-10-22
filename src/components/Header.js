@@ -13,11 +13,11 @@ function Header() {
 	};
 	return (
 		<div className="header">
-			<Link to="/">
-				<div className="header_info">
+			<div className="header_info">
+				<Linkrouter to="/home">
 					<img className="header_img" src={logo} alt="Canalit Logo" />
-				</div>
-			</Link>
+				</Linkrouter>
+			</div>
 
 			<nav className="header_nav">
 				<div onClick={handleState} className="header_hamburger">
@@ -67,7 +67,7 @@ function Header() {
 							activeClass="active"
 							to="services"
 							spy={true}
-							offset={-550}
+							offset={-600}
 							smooth={true}
 							duration={1000}
 						>

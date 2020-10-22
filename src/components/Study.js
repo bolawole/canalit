@@ -123,8 +123,11 @@ export default styled(Study)`
 	}
 	.study_section1,
 	.study_section2 {
-		margin: 8rem;
+		width: 50%;
+		text-align: justify;
+		margin: 5rem auto;
 		h3 {
+			color: #808080bf;
 			margin-bottom: 3rem;
 		}
 	}
@@ -152,26 +155,33 @@ export default styled(Study)`
 		text-align: justify;
 		.study_section1,
 		.study_section2 {
-			margin: 0;
+			margin-top: 3rem;
+			width: 100%;
+			h3 {
+				margin-bottom: 3rem;
+				text-align: center;
+			}
 		}
 		.study_section2steps {
 			display: block;
 			margin: 1rem auto;
 		}
-		@media screen and (max-width: 800px) {
-			h2 {
-				text-align: center;
-			}
-			.study_description {
-				width: 100%;
-				padding: 3rem 0.5rem;
-				text-align: justify;
-			}
+
+		h2 {
+			text-align: center;
+		}
+		.study_description {
+			width: 100%;
+			padding: 3rem 0.5rem;
+			text-align: justify;
 		}
 		.study_header {
 			display: block;
 			padding: 1rem;
 			height: max-content;
+		}
+		svg {
+			width: 100%;
 		}
 	}
 `;

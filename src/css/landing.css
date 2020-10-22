@@ -70,8 +70,22 @@
 		top: 0;
 	}
 	.landing_book {
-		top: 25%;
-		left: 47px;
+		font-weight: bold;
+		top: 63%;
+		left: 24px;
 		font-size: 1rem;
+		margin: auto;
+		width: 100%;
+	}
+	.landing_book > button {
+		font-size: 10px;
+		font-weight: bold;
+	}
+	#landing_start {
+		margin-top: 10px;
+		font-weight: bold;
+		color: red;
+		text-shadow: 0 0 5px #f9d62b9c;
+		font-size: 19px;
 	}
 }
