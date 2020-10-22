@@ -10,7 +10,7 @@ function Footer() {
 					<h6>Contact Us</h6>
 					<ul>
 						<li>
-							<i className="fas fa-phone-alt footer_icon"></i>+1 (514) 589-7742
+							<i className="fas fa-phone-alt footer_icon"></i>+1 (438) 388-1039
 						</li>
 						<li>
 							<i className="fas fa-at footer_icon"></i>

@@ -35,7 +35,9 @@ const Landing = () => {
 			</Slider>
 			<div className="landing_overlay"></div>
 			<div className="landing_book">
-				<p>At Canalit We are Leading In Travels Immigration and Visa</p>
+				<p id="atcanalit">
+					At Canalit We are Leading In Travels Immigration and Visa
+				</p>
 				<p id="landing_start">Start Your Immigration Journey Here</p>
 				{/* <button>Book a Consultant</button> */}
 

@@ -27,8 +27,12 @@ function App() {
 					<Route path="/studyinCanada">
 						<ReadMore />
 					</Route>
-					<Route path="/visitCanada">Immigration Page</Route>
-					<Route path="/canadacitizenship">canadacitizenship</Route>
+					<Route path="/visitCanada">
+						We are sorry this Page is currently Under Maintainance
+					</Route>
+					<Route path="/canadacitizenship">
+						We are sorry this Page is currently Under Maintainance
+					</Route>
 					<Route path="/immigrationnews">
 						<News />
 					</Route>

@@ -71,15 +71,34 @@
 	}
 	.landing_book {
 		font-weight: bold;
-		top: 63%;
-		left: 24px;
+		top: 25%;
+		left: 0;
 		font-size: 1rem;
 		margin: auto;
 		width: 100%;
+
+		margin-top: 30px;
+	}
+	#atcanalit {
+		/* position: absolute; */
+		/* top: -200%;
+		left: 5%; */
+		font-size: 15px;
+		font-weight: bold;
+		/* text-align: left; */
+		width: 70%;
+		text-align: center;
+		margin: auto;
 	}
 	.landing_book > button {
-		font-size: 10px;
+		font-size: 15px;
 		font-weight: bold;
+
+		/* top: -90%;
+		left: 13%; */
+		width: 100%;
+		margin: auto;
+		margin-top: 50%;
 	}
 	#landing_start {
 		margin-top: 10px;
@@ -87,5 +106,6 @@
 		color: red;
 		text-shadow: 0 0 5px #f9d62b9c;
 		font-size: 19px;
+		display: none;
 	}
 }
