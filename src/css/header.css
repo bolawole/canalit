@@ -13,6 +13,11 @@
 	background: white;
 	padding-bottom: 0.5rem;
 }
+li:hover,
+a:hover {
+	text-decoration: underline;
+	font-weight: bold;
+}
 .header_hamburger {
 	font-size: 35px;
 	display: none;
@@ -35,6 +40,7 @@
 
 .header_nav > ul > li {
 	margin-left: 2rem;
+	font-weight: bold;
 }
 .header_hamburger_menu {
 	position: fixed;

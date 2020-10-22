@@ -41,10 +41,13 @@ const ReadMore = ({ className }) => {
 	);
 };
 export default styled(ReadMore)`
-	font-family: sans-serif;
 	.readmore_Heading {
 		width: 50%;
 		margin: 5rem auto;
+		font-family: sans-serif;
+	}
+	section {
+		font-family: sans-serif;
 	}
 	@media screen and (max-width: 800px) {
 		display: block;

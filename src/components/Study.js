@@ -66,7 +66,11 @@ function Study({ className }) {
 					</p>
 				</div>
 
-				<button>Do your assement here</button>
+				<button>
+					<a href="http://ecloudfile.com/assessment/CCP2019458">
+						Do your assement here
+					</a>
+				</button>
 			</div>
 			<div className="study_section1">
 				<h3>Why Choose Canada?</h3>
@@ -144,10 +148,15 @@ export default styled(Study)`
 		font-weight: bold;
 		transition: background-color 0.3s ease;
 		margin-left: 3rem;
+		a {
+			text-decoration: none;
+			color: #808080bf;
+		}
 	}
 	button:hover {
-		background-color: red;
-		color: white;
+		/* background-color: red; */
+		/* color: white; */
+		box-shadow: 0 0 10px #826767;
 	}
 	@media screen and (max-width: 800px) {
 		width: 100%;

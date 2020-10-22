@@ -43,7 +43,11 @@ const Work = ({ className }) => {
 					</p>
 				</div>
 
-				<button>Do your assement here</button>
+				<button>
+					<a href="http://ecloudfile.com/assessment/CCP2019458">
+						Do your assement here
+					</a>
+				</button>
 			</div>
 			<div className="work_description">
 				<p>
@@ -189,9 +193,12 @@ export default styled(Work)`
 		font-weight: bold;
 		transition: background-color 0.3s ease;
 		margin-left: 3rem;
+		a {
+			color: #e8a87c;
+		}
 	}
 	button:hover {
-		background-color: red;
+		box-shadow: 0 0 10px #826767;
 		color: white;
 	}
 	.work_description {

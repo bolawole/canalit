@@ -45,7 +45,7 @@ function Visit({ className }) {
 					</p>
 				</div>
 
-				<button>Do your assement here</button>
+				{/* <button>Do your assement here</button> */}
 			</div>
 			<div className="visit_section2">
 				<div
