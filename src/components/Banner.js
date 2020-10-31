@@ -14,7 +14,7 @@ function Banner() {
 					<li>
 						<div className="banner_number">
 							<i className="fas fa-phone-square-alt banner_icon"></i>
-							+1 (514) 589-7742
+							+1 (438) 388-1039
 						</div>
 					</li>
 					<li>

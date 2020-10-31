@@ -10,7 +10,6 @@ import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 
 function EduInfo(props) {
-	console.log(props);
 	const next = (e) => {
 		e.preventDefault();
 		props.nextStep();

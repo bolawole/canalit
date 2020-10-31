@@ -9,7 +9,6 @@ function Header() {
 
 	const handleState = () => {
 		setMenu(!menu);
-		console.log("change state logic");
 	};
 	return (
 		<div className="header">

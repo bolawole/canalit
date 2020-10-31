@@ -1,18 +1,27 @@
 import React from "react";
 import styled from "styled-components";
-function Post({ data, isloading, className }) {
-	if (isloading) {
-		return <h2>Loading....</h2>;
-	}
+function Post({ data, className }) {
 	return (
 		<div className={className}>
-			{console.log(data)}
 			{data?.map((edata) => {
+				const { isoDate } = edata;
+				const date = isoDate.split(":")[0].split("T")[0];
+				// .split("-");
 				return (
 					<div key={edata.link} className="post_container">
 						<a href={edata?.link}>{edata?.title}</a>
 						<p>{edata.contentSnippet}</p>
-						<p>{edata.pubDate}</p>
+						<h6
+							style={{
+								display: "flex",
+								justifyContent: "flex-end",
+								color: "gray",
+								fontSize: "10px",
+							}}
+						>
+							{date}
+						</h6>
+						{/* <p>{new Date(date)}</p> */}
 					</div>
 				);
 			})}

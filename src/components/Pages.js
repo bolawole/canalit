@@ -3,7 +3,6 @@ import React from "react";
 import styled from "styled-components";
 const Pages = ({ postsPerPage, totalPost, paginate, className }) => {
 	const pageNumber = [];
-	console.log("this is the toal oost", totalPost);
 	for (let i = 1; i <= Math.ceil(totalPost / postsPerPage); i++) {
 		pageNumber.push(i);
 	}

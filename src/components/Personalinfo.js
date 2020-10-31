@@ -25,7 +25,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Personalinfo(props) {
-	console.log(props);
 	const classes = useStyles();
 	// initialize all state here
 	const [country, setCountry] = useState("");
